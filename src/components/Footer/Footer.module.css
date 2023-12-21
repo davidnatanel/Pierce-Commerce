@@ -1,0 +1,291 @@
+.footer {
+    width: 100%;
+
+    height: 290px;
+
+    background: #000;
+
+}
+
+.dates {
+
+
+    height: 290px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    background-color: black;
+}
+
+.informationLeft {
+
+
+    width: 221px;
+    height: auto;
+
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    grid-column: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-left: 78px;
+}
+
+.informationLeft ul {
+
+
+    list-style: none;
+}
+
+.informationLeft button {
+
+    background-color: transparent;
+
+    color: white;
+    border: white 1px solid;
+    /* width: 194px;
+    height: 40px; */
+
+    height: 40px;
+    padding: 6px;
+
+    margin-top: 15px;
+}
+
+
+.loge {
+    grid-column: 2;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+
+    font-size: 22px;
+
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.2px;
+
+    /*
+   
+  
+  */
+}
+
+
+.informationRigth {
+    grid-column: 3;
+    width: 10%;
+    height: 100%;
+
+    color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.informationRigth h2 {
+    font-size: 20px;
+
+    font-family: 'Rubik';
+}
+
+.informationRigth div {
+
+    display: flex;
+}
+
+.informationRigth ul {
+    list-style: none;
+
+    width: 266px;
+
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.information {
+
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 28px
+}
+
+.information div {
+    display: flex;
+
+}
+
+.poweredByDiv {
+
+    width: 40%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mateuSportsDiv {
+
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: end;
+
+
+}
+
+
+.vtexmobile {
+
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .dates {
+
+        display: flex;
+        height: 1000px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .informationLeft {
+        height: 20%;
+
+        order: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 50%;
+        margin: 0;
+
+
+    }
+
+    .informationLeft ul {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 5px;
+
+    }
+
+    .loge {
+
+
+        height: 20%;
+        order: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informationRigth {
+
+
+        height: 50%;
+
+        width: 100%;
+
+        order: 3;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .sucursal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-bottom: 30px;
+    }
+
+    .sucursal img {
+        height: 40px;
+
+
+    }
+
+
+    /* information */
+
+    .information {
+
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+        gap: 20px;
+    }
+
+    .poweredByDiv {
+
+
+        display: flex;
+
+        width: 100%;
+    }
+
+    .mateuSportsDiv {
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mateuSportsDiv div {
+        padding: 20px;
+        gap: 5px;
+
+    }
+
+    .vtexmobile {
+
+        display: block;
+    }
+
+    .vtex {
+        display: none;
+    }
+}
