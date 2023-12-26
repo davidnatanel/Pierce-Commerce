@@ -6,11 +6,11 @@
 
     padding-left: 70px;
     padding-right: 70px;
+    box-sizing: border-box;
 
 }
 
 .desktop {
-    width: fit-content;
     height: auto;
     width: 100%;
 
@@ -43,7 +43,9 @@
     justify-content: space-between;
     gap: 11.71px;
 
-    width: 100%;
+    min-width: 1269px;
+    overflow: hidden;
+
 }
 
 .item1 {
