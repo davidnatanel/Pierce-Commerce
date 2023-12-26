@@ -19,6 +19,7 @@ const Slider = () => {
 
                 {listSlider.map((e, i) => (
                     <div
+                        key={i}
 
 
                         className={`${i === currentIndex ? style.dotactive : style.dot}`}

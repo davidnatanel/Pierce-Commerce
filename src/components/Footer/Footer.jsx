@@ -17,14 +17,34 @@ const Footer = () => {
                 <div className={styleFooter.informationLeft}>
 
                     <ul>
-                        <li>CONDICIONES</li>
-                        <li>TRABAJA CON NOSOTROS</li>
-                        <li>MEDIOS DE PAGO</li>
-                        <li>PREGUNTAS FRECUENTES</li>
+                        <li>
+                            <p>
+                                CONDICIONES
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                TRABAJA CON NOSOTROS
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                MEDIOS DE PAGO
 
-                        <button>BOTÓN DE ARREPENTIMIENTO</button>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                PREGUNTAS FRECUENTES
+                            </p>
+                        </li>
+
                     </ul>
+                    <button>BOTÓN DE ARREPENTIMIENTO</button>
+
                 </div>
+
+
                 <div className={styleFooter.loge}>
                     <h1>MI TIENDA</h1>
 
@@ -33,13 +53,29 @@ const Footer = () => {
 
 
                     <div className={styleFooter.sucursal}><img src={gpsLoge} alt="" />
-                        <h2 style={{ padding: "25px" }} >SUCURSALES</h2>
+                        <h2  >SUCURSALES</h2>
                     </div>
 
                     <ul>
-                        <li>Whatsapp 2215137270</li>
-                        <li>ecommerce@mateu.com.ar</li>
-                        <li>La Plata 1900, Buenos Aires, Argentina </li>
+                        <li>
+                            <p>
+                                Whatsapp 2215137270
+
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                ecommerce@mateu.com.ar
+
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+
+                                La Plata 1900, Buenos Aires, Argentina
+
+                            </p>
+                        </li>
                     </ul>
 
 
@@ -54,8 +90,8 @@ const Footer = () => {
 
 
                 <div className={styleFooter.poweredByDiv}>
-                    <h3 style={{ color: "white" }}>Powered by pierce commerce</h3>
-                    <img src={PierceLoge} alt="" />
+                    <h3 style={{ color: "white", paddingRight: "12.51px" }}>Powered by pierce commerce</h3>
+                    <img src={PierceLoge} style={{ paddingRight: "25.52px" }} alt="" />
                     <img className={styleFooter.vtex} src={Vtex} alt="" />
 
                 </div>

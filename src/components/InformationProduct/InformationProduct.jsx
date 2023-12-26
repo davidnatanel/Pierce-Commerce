@@ -45,18 +45,21 @@ const InformationProduct = () => {
             </div>
 
             <div className={style.mobile}>
+                <div className={style.box}>
+                    <div
 
-                <div
+                        className={style.containerbox}
+                    >   <img src={`${listInformationProduct[currentIndex].url}`} alt="" />
 
-                    className={style.containerbox}
-                >   <img src={`${listInformationProduct[currentIndex].url}`} alt="" />
+                        <h2>{`${listInformationProduct[currentIndex].title}`}</h2>
 
-                    <h2>{`${listInformationProduct[currentIndex].title}`}</h2>
+                        <p>{`${listInformationProduct[currentIndex].text}`}</p>
 
-                    <p>{`${listInformationProduct[currentIndex].text}`}</p>
 
+                    </div>
 
                 </div>
+
 
 
                 <div className={style.dots}>
@@ -64,6 +67,8 @@ const InformationProduct = () => {
                     {listInformationProduct.map((e, i) => {
                         return (
                             <div
+                                key={i}
+
                                 className={`${i === currentIndex ? style.dotActive : style.dot}`}
                                 onClick={() => goToSlide(i)}
                             >

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from "./PopularCategory.module.css";
 import { listImageCategoryPopular } from '../../utils/listImageCategoryPopular/ScriptCategoryPopular';
+import { listImageCategoryPopularmobile } from '../../utils/listImageCategoryPopular/ScriptCategoryPopular';
 
 
 
@@ -22,22 +23,17 @@ const PopularCategory = () => {
 
 
 
-                    {/* 1 */}
                     <div className={style.item1}>
                         <h2>ZAPATILLAS</h2>
 
                         <img src={listImageCategoryPopular[0].url} alt="" />
                     </div>
-                    {/* 1 */}
-
-
-                    {/* 2 */}
 
                     <div className={style.item2}>
 
                         <div className={style.up}>
                             <h2>FÚTBOL</h2>
-                            <img src={listImageCategoryPopular[3].url} alt="" />
+                            <img src={listImageCategoryPopular[1].url} alt="" />
 
                         </div>
                         <div className={style.down}>
@@ -47,19 +43,12 @@ const PopularCategory = () => {
 
                         </div>
                     </div>
-                    {/* 2 */}
-
-
-                    {/* 3 */}
-
                     <div className={style.item3}>
-                        <h2>PELOTA</h2>
+                        <h2>PELOTAS</h2>
 
-                        <img src={listImageCategoryPopular[1].url} alt="" />
-
+                        <img src={listImageCategoryPopular[3].url} alt="" />
 
                     </div>
-                    {/* 3 */}
 
 
                 </div>
@@ -77,9 +66,9 @@ const PopularCategory = () => {
 
 
 
-                    <h2>{`${listImageCategoryPopular[currentIndex].title}`} </h2>
+                    <h2>{`${listImageCategoryPopularmobile[currentIndex].title}`} </h2>
 
-                    <img src={`${listImageCategoryPopular[currentIndex].url}`} alt="" />
+                    <img src={`${listImageCategoryPopularmobile[currentIndex].url}`} alt="" />
 
 
                 </div>
@@ -87,9 +76,11 @@ const PopularCategory = () => {
 
                 <div className={style.dots}>
 
-                    {listImageCategoryPopular.map((e, i) => {
+                    {listImageCategoryPopularmobile.map((e, i) => {
                         return (
                             <div
+                                key={i}
+
                                 className={`${i === currentIndex ? style.dotactive : style.dot}`}
                                 onClick={() => goToSlide(i)}
                             >

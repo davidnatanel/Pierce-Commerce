@@ -13,6 +13,7 @@ import Trend from './components/Trend/Trend';
 import BestSelling from './components/BestSelling/BestSelling';
 import Header from './components/Header/Header';
 
+
 function App() {
 
 
@@ -37,7 +38,7 @@ function App() {
 
       <InformationProduct />
 
-      {/* footer */}
+
 
       <Footer />
       {/* footer */}

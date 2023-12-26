@@ -3,26 +3,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 411px;
+    height: 378px;
     width: 100%;
-    position: relative;
     overflow: hidden;
 
+    position: relative;
+    flex-direction: column;
+
+    overflow: hidden;
+    margin-bottom: 80PX;
 }
 
 .img {
     width: 100%;
-
-    /* 
-    height: 300px;
-    width: 100%; */
-    position: absolute;
-
 }
 
 .dots {
 
-    position: absolute;
 
 
 
@@ -33,8 +30,9 @@
     width: 100%;
 
     column-gap: 20px;
-    bottom: 10px;
     z-index: 10;
+
+    position: absolute;
 
 }
 
@@ -47,6 +45,12 @@
     height: 15px;
     width: 15px;
 
+
+}
+
+.dot:hover {
+
+    cursor: pointer;
 
 }
 
@@ -70,14 +74,17 @@
     .container {
 
         height: 140px;
-        width: 100%;
+        margin-bottom: 40px;
+
 
     }
 
+
     .img {
 
-
-        height: 100%;
+        object-fit: cover;
+        height: 140px;
+        width: 100%;
 
 
 
@@ -100,7 +107,7 @@
         gap: 10px;
         height: 40px;
 
-
+        bottom: 7px;
     }
 
     .dot {

@@ -7,12 +7,19 @@
     gap: 34px;
     background: #FFF;
     box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.10);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #0F1E7B;
 
 }
 
 .containerHeader {
     display: flex;
-    justify-content: space-evenly;
 
 
     width: 100%;
@@ -28,46 +35,57 @@
     line-height: 38px;
     letter-spacing: 0.1em;
     text-align: left;
-
+    padding-left: 70px;
 }
 
 .SearchBox {
     width: 515px;
     height: 40px;
-
     border-radius: 48px;
     border: 1px solid #BABABA;
     background: #FFF;
-
-
     display: flex;
     justify-content: center;
-
-
+    margin-left: 229px;
 }
 
-.SearchBox input {
 
+
+.SearchBox input {
     border: none;
     height: 100%;
     background: transparent;
     width: 90%;
+    outline: none;
+    text-indent: 10px;
+
+}
+
+.SearchBox input:active {
+    border: none;
+    outline: none;
+
+
+}
+
+.SearchBox input:focus {
+    border: none;
+    outline: none;
+
+
 }
 
 .containerSearch {
     display: flex;
     align-items: center;
-    gap: 240px;
 
 }
 
 
 
 .MyCount {
-
     display: flex;
     align-items: center;
-
     gap: 8px;
     color: #5E5E5E;
     font-family: Roboto;
@@ -83,6 +101,7 @@
     display: flex;
     align-items: flex-start;
     gap: 32px;
+    margin-left: 200px;
 
 }
 
@@ -91,13 +110,16 @@
     background-color: white;
 }
 
+.buttonsUserCart button:hover {
+    cursor: pointer;
+}
+
 .buttonSearch {
 
     display: inline-flex;
     padding: 12px;
     align-items: flex-start;
     gap: 12px;
-
     border: none;
     background-color: transparent;
 
@@ -113,22 +135,25 @@
     gap: 24px;
     align-self: stretch;
 
+
 }
 
 .buttonlist ul {
 
-    color: #5E5E5E;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-
     display: flex;
     align-items: end;
 
+
+}
+
+.buttonlist ul:hover {
+    cursor: pointer;
 
 }
 
@@ -136,12 +161,9 @@
 
     height: 18px;
     gap: 8px;
-
     display: flex;
     align-items: end;
-
-
-
+    color: #DC1E0F;
 
 }
 
@@ -166,7 +188,18 @@
 }
 
 @media (max-width: 768px) {
-    .header {}
+
+    .sale {
+
+        color: #DC1E0F;
+
+        height: auto;
+        display: flex;
+        align-items: end;
+
+    }
+
+
 
     .SearchBox {
 
@@ -202,7 +235,6 @@
 
 
 
-    .containerHeader {}
 
     .menumobile {
 
@@ -220,11 +252,18 @@
         text-align: left;
         color: #0F1E7B;
 
+
+        margin-left: 27px;
+
+        padding-left: 0px;
+
     }
 
     .buttonsUserCart {
 
         width: 100%;
+        margin-left: 0px;
+
     }
 
     .MyCount p {
@@ -312,5 +351,17 @@
         width: 30px;
 
     }
+
+    .containerHeader {
+        justify-content: space-evenly;
+
+    }
+
+    .SearchBoxMobile input {
+
+        outline: none;
+        text-indent: 10px;
+    }
+
 
 }

@@ -1,0 +1,59 @@
+.carrousel-list {
+
+    box-sizing: border-box;
+
+    background-color: red;
+    height: 50%;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}
+
+.carrousel-track {
+    box-sizing: border-box;
+
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.carrousel {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    overflow: hidden;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+}
+
+.item {
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    width: 246px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.item img {
+    object-fit: containt;
+    height: 100%;
+}
+
+.left {
+    background-color: aqua;
+}
+
+.rigths {
+    background-color: rgb(0, 109, 0, 109, 109);
+
+}

@@ -31,7 +31,7 @@ const Header = () => {
         <header style={{ height: menuActive == true ? "81px" : null, border: menuActive == true ? "2px solid #000000" : null }} className={style.header}>
 
 
-            <div className={style.containerHeader}>
+            <div style={{ justifyContent: menuActive == true ? "start" : null }} className={style.containerHeader}>
 
 
                 <img style={{ display: menuActive == true ? "none" : null }} onClick={() => { buttonMenu("cross") }} className={style.menumobile} src={menu} alt="" />
@@ -59,7 +59,7 @@ const Header = () => {
                     <div style={{ display: menuActive == true ? "none" : "flex" }} className={style.buttonsUserCart}>
 
                         <button className={style.MyCount}><img style={{ fill: "#5E5E5E", width: "22px", height: "22px" }} src={User} alt="" /> <p>Mi cuenta</p></button>
-                        <button><img style={{ width: "22px", height: "22px" }} src={Cart} alt="" /></button>
+                        <button ><img style={{ width: "22px", height: "22px" }} src={Cart} alt="" /></button>
 
 
 
@@ -81,11 +81,10 @@ const Header = () => {
 
 
             <li className={style.buttonlist}>
-                <ul>Muebles</ul>
-                <ul>Calzado</ul>
-                <ul>Colchones</ul>
-                <ul>Herramientas</ul>
-                <ul className={style.sale} >Ofertas <img style={{ width: "22px", height: "22px" }} src={Group} alt="" /> </ul>
+                <ul style={{ color: "#5E5E5E" }}>Muebles</ul>
+                <ul style={{ color: "#5E5E5E" }}>Colchones</ul>
+                <ul style={{ color: "#5E5E5E" }}>Herramientas</ul>
+                <ul className={style.sale} >Ofertas <img style={{ color: "#DC1E0F", width: "22px", height: "22px" }} src={Group} alt="" /> </ul>
             </li>
 
 
@@ -104,7 +103,13 @@ const Header = () => {
                     <ul >Herramientas</ul>
                     <hr />
 
-                    <ul className={style.sale} >Ofertas <img style={{ width: "22px", height: "22px" }} src={Group} alt="" /> </ul>
+                    <ul className={style.sale} >
+
+
+                        Ofertas
+
+
+                        <img style={{ color: "#DC1E0F", width: "22px", height: "22px" }} src={Group} alt="" /> </ul>
 
 
                 </div>

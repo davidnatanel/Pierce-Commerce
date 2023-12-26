@@ -1,50 +1,103 @@
 .container {
 
-    /* display: flex;
-    width: 100%;
+
 
     height: 566px;
-    padding: 0px 70px;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-shrink: 0;
-    margin: 50px 0px 50px 0px;
-    overflow: hidden; */
 
-    overflow: hidden;
-    height: auto;
 
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .desktop {
 
-    height: auto;
-    padding: 50px;
+    padding-top: 46px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 .desktop h1 {
-    padding: 15px;
+    padding-bottom: 40px;
+    width: 100%;
+
     color: black;
+
+
 }
 
 .listTrend {
+    position: relative;
     display: flex;
-    width: 100%;
 
-    gap: 20px;
+    height: 402px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.carrusel {
+
+
+    width: 100%;
+
+
+
+    display: flex;
+
+    gap: 17.5px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+.carrusel :where(.card .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carrusel .dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carrusel .dragging .item {
+    cursor: grab;
+    user-select: none;
+}
+
+.carrusel .item {
+    scroll-snap-align: start;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.item:hover {
+    cursor: pointer;
 }
 
 .item {
+    user-select: none;
 
     width: 246px;
     height: 402px;
 
-    border-radius: 6px;
-    background: #FFF;
     border-radius: 6px;
     background: #FFF;
     box-shadow: 0px 2px 6px 0px #CCCACA;
@@ -53,18 +106,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .item img {
     width: 188px;
     height: 188px;
+    user-select: none;
+
+    pointer-events: none;
 }
 
 
 .item h3 {
-
     font-family: Roboto Flex;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0px;
@@ -74,23 +131,25 @@
 
 .item h4 {
     font-family: Roboto Flex;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+
     color: #5E5E5E;
 
 }
 
 .item p {
     color: rgba(0, 0, 0, 0.72);
-    text-align: center;
     font-family: Roboto Flex;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+
 }
 
 
@@ -101,8 +160,28 @@
     border: 1px solid #DC1E0F;
     background-color: transparent;
     padding: 5px;
+    font-family: Roboto Flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+
 }
 
+.item button:hover {
+    cursor: pointer;
+}
+
+.buttonleft:hover {
+    cursor: pointer;
+
+}
+
+.buttonright:hover {
+    cursor: pointer;
+
+}
 
 .buttonleft {
 
@@ -116,7 +195,9 @@
     border: none;
 
     font-size: 2em;
+    position: absolute;
 
+    left: -18px;
 }
 
 .buttonright {
@@ -129,9 +210,11 @@
 
     font-size: 2em;
 
+    position: absolute;
+    right: -18px;
+
 
 }
-
 
 
 
@@ -145,7 +228,9 @@
 
     .container {
         width: 100%;
-        height: 500px;
+        height: auto;
+        padding: 0px;
+        overflow: hidden;
     }
 
     .desktop {
@@ -156,15 +241,109 @@
         display: block;
 
         width: 100%;
-        height: auto;
-
+        height: 380px;
 
     }
 
     .mobile h1 {
-        padding: 15px;
-        color: black;
+        padding-left: 15px;
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+
     }
+
+    .listTrend {
+        padding-left: 16px;
+        height: 233px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .carrusel {
+        width: 100%;
+        height: 233px;
+        gap: 8px;
+
+    }
+
+
+    .item {
+        width: 160px;
+        height: 233px;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0px 2px 6px 0px #CCCACA;
+
+    }
+
+    .item img {
+
+        width: 99.35px;
+        height: 99.55px
+    }
+
+    .item h3 {
+        font-family: Roboto Flex;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+    .item h4 {
+        font-family: Roboto Flex;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+
+    .item p {
+
+        font-family: Roboto Flex;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+    .item button {
+
+        width: 58px;
+        height: 16px;
+        font-family: Encode Sans;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
 
 
     .dots {
@@ -175,6 +354,8 @@
         position: absolute;
         gap: 10px;
         height: 40px;
+
+
     }
 
     .dot {
@@ -198,6 +379,5 @@
         cursor: pointer;
         background: #DC1E0F;
     }
-
 
 }

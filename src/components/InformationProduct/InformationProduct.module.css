@@ -13,49 +13,50 @@
 
     justify-content: space-around;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
+
 
 }
 
 
 .desktop {
     display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
 .item {
 
-
-    height: 168px;
+    height: 171.08px;
     width: 263px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .item img {
     width: 43.063px;
     height: 57.083px;
-    margin: 24px;
+    margin-bottom: 24px;
+
 }
 
 
 .item h2 {
-
-    color: #000;
-    text-align: center;
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    /* 122.222% */
-    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-align: center;
+
 }
 
 .item p {
@@ -83,29 +84,31 @@
 
     .desktop {
         display: none;
+
+
     }
 
     .mobile {
-        display: block;
-
+        display: flex;
         width: 100%;
-        height: 500px;
-
-
+        height: 261px;
         position: relative;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+
     }
+
+
 
     .dots {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
         gap: 10px;
-        height: 40px;
+        height: 44.6px;
         background: #ECECEC;
-
-
     }
 
     .dot {
@@ -130,17 +133,12 @@
         background: rgb(0, 0, 0);
     }
 
-    .containerbox img {
-
-        padding-bottom: 24px;
-    }
 
     .containerbox {
         background: #ECECEC;
 
-        height: 500px;
+        height: 171.08px;
         width: 100%;
-
 
         display: flex;
         justify-content: center;
@@ -148,7 +146,26 @@
 
         flex-direction: column;
         text-align: center;
-        padding: 30px;
+    }
+
+    .containerbox img {
+        width: 43.06px;
+        height: 57.08px;
+
+        margin-bottom: 24px;
+    }
+
+    .containerbox h2 {
+        width: 361px;
+    }
+
+    .containerbox p {
+        width: 266px;
+    }
+
+    .box {
+
+        background-color: aquamarine;
     }
 
 }
